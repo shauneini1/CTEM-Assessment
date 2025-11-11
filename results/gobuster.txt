@@ -1,0 +1,12 @@
+/.hta                [33m (Status: 403)[0m [Size: 290]
+/.htpasswd           [33m (Status: 403)[0m [Size: 295]
+/.htaccess           [33m (Status: 403)[0m [Size: 295]
+/config              [36m (Status: 301)[0m [Size: 311][34m [--> http://54.74.29.28/config/][0m
+/docs                [36m (Status: 301)[0m [Size: 309][34m [--> http://54.74.29.28/docs/][0m
+/external            [36m (Status: 301)[0m [Size: 313][34m [--> http://54.74.29.28/external/][0m
+/favicon.ico         [32m (Status: 200)[0m [Size: 1406]
+/index.php           [36m (Status: 302)[0m [Size: 0][34m [--> login.php][0m
+/php.ini             [32m (Status: 200)[0m [Size: 148]
+/phpinfo.php         [36m (Status: 302)[0m [Size: 0][34m [--> login.php][0m
+/robots.txt          [32m (Status: 200)[0m [Size: 26]
+/server-status       [33m (Status: 403)[0m [Size: 299]

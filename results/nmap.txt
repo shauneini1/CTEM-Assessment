@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Tue Nov 11 22:41:17 2025 as: nmap -sV -Pn -T4 -oN results/nmap.txt 54.74.29.28
+Nmap scan report for ec2-54-74-29-28.eu-west-1.compute.amazonaws.com (54.74.29.28)
+Host is up (0.072s latency).
+Not shown: 998 closed tcp ports (conn-refused)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.9p1 Ubuntu 3ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    Apache httpd 2.4.25 ((Debian))
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Nov 11 22:41:26 2025 -- 1 IP address (1 host up) scanned in 9.38 seconds

