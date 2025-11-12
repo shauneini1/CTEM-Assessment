@@ -18,7 +18,7 @@ jobs:
           echo "====== CTEM Report Summary ======"
 
           echo "[1] Report File:"
-          test -f "Eini_Shaun_CTEM_Report.docx" && echo "Report found ✅" || echo "❌ Report file missing!"
+          test -f "Eini_Shaun_CTEM_Report.docx" && echo "Report found" || echo  "Report file missing!"
 
           echo ""
           echo "[2] Nmap Results:"
